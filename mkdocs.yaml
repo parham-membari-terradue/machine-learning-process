@@ -1,7 +1,8 @@
 site_name: Machine Learning Process
 theme:
-    logo: imgs/icon.png
     name: material
+    icon: 
+      logo: fontawesome/solid/earth-europe
 
     palette:
     - media: "(prefers-color-scheme: light)"
@@ -30,6 +31,7 @@ markdown_extensions:
   - abbr
   - admonition
   - footnotes
+  
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
@@ -47,6 +49,9 @@ markdown_extensions:
       base_path: './'
   - pymdownx.highlight:
       line_spans: __span
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - styles/css/app.css
